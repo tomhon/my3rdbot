@@ -1,0 +1,4550 @@
+{
+  "luis_schema_version": "1.2.0",
+  "name": "shopbot",
+  "desc": "Bot driven shopping experience",
+  "culture": "en-us",
+  "intents": [
+    {
+      "Name": "Search",
+      "Children": []
+    },
+    {
+      "Name": "Happy",
+      "Children": []
+    },
+    {
+      "Name": "Sad",
+      "Children": []
+    },
+    {
+      "Name": "Abuse",
+      "Children": []
+    },
+    {
+      "Name": "None",
+      "Children": []
+    }
+  ],
+  "entities": [
+    {
+      "Name": "PriceScope",
+      "Children": [
+        "Under",
+        "Over"
+      ]
+    },
+    {
+      "Name": "ProductName",
+      "Children": []
+    },
+    {
+      "Name": "Color",
+      "Children": []
+    },
+    {
+      "Name": "Brand",
+      "Children": []
+    }
+  ],
+  "bing_entities": [
+    "money"
+  ],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "Colors",
+      "mode": true,
+      "words": "Red,Orange,Yellow,Green,Blue,Indigo,Violet,White,Black",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "please find yellow lego from macys",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me a red shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me sunglasses from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me sneakers from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find me white nikes under 100",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "please find brown lego from target",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me coats from levis",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "fine me white nike shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me shirts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me red shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me coats from forever21",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i need white shorts from adidas",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me laptops from dell",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me orange pants from macys",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find pants at nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me belts from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me shorts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": ";lk",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show me hm sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me some cool pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show be black pants from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me pants from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i am looking shirts from forever 21",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 6
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i need pants by nike under $60",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me pants under $100 from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Brand",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me a basketball under $40 from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Brand",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me sneakers from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me socks from forever21",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me h&m sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "show me coats from american eagle",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i am looking for shorts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me socks from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i am looking for pants under $50 from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Brand",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me coats from diesel",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me nike sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me socks from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me coats from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me sneakers under $50",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me boots over $90",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Over",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i am looking for sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "hh",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "jj",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show",
+      "intent": "Search",
+      "entities": []
+    },
+    {
+      "text": "show me sneakers from hm",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me yellow shirts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me addidas sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me shoes from nordstrom under $100",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i am looking for pants from american eagle",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 6,
+          "endPos": 7
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me red sneakers from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me white sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me shorts under $40 from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Brand",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me socks from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "show me some pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "fdsafsda ffsfas",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need red socks from sephora",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "thanks",
+      "intent": "Happy",
+      "entities": []
+    },
+    {
+      "text": ":-)",
+      "intent": "Happy",
+      "entities": []
+    },
+    {
+      "text": ":-(",
+      "intent": "Sad",
+      "entities": []
+    },
+    {
+      "text": "i want to buy tennis balls",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "show me speakers from harmon kardon",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "please find red lego from costco",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find yellow lego from amazon",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me green ties nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me blue handbags for less than $100",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want to find ear rings for $50",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "blue socks macy's",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "show me pa td",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i'm looking for tennis balls",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "show me cs go karambit marble fade",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please find orange carrots from whole foods",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 6
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "thank you!",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please find brown shoes at nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "black handbags from sephora",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a white shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Color",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "black towels nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "show me yellow bagels",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "please find red lego from amazon",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find running shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "please find brown pants from adidas",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a red nike shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "Color",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "asdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "dodd",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "t",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "f",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "high",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "nike roshes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "search for red nike shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me yellow handbags from sephora",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "red lego target",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "find green shoes from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "buy red shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show be black pants from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me white pants from macys",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me green socks from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me shirts under $100 from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope::Under",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Brand",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find black shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me orange pants from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me green shorts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "thanks!",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "please find red shirts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me pants from adidas",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me yellow shirts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me blue sneakers nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find white shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find black shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "red shirts puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "blue nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "black shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "find white shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me shorts from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me shirts from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me white nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find red shoes from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me yellow sneakers from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me red shirts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me white sneakers from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me white shoes from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me red shoes from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me red pants from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find black sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "nike white shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me shirts from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me shoes from puma",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find white nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me red pants from nordtrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me red nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me nordstrom shirts",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "white pants from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "show me puma shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "black sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "find red shoes from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me red shoes from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": ":)",
+      "intent": "Happy",
+      "entities": []
+    },
+    {
+      "text": "show me red pants from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find red nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me shoes from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me red pants nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me pants from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find red nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me shoes from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "jash",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "iiiiiiiiiiiiiiii",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "red nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "nike red",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "ggggg",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "lkj",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find blue rigger hdmi cable",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find tennis balls",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find black roshes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me blue handbags from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find nike roshes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find black roshss",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find red sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find black roahss",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find black belt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for blue levi's jeans",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 6,
+          "endPos": 8
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 9,
+          "endPos": 9
+        },
+        {
+          "entity": "Color",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for galaxy pattern leggings",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 6
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "show me nike free run shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "find seattle mariners hat",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a seahawks jersey",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "find me a dolphins hat",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "find nike roshe",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want converse shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find me a pair of nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i want red bags",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me yellow lego from target",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find red handbags",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "do you know tay?",
+      "intent": "Abuse",
+      "entities": []
+    },
+    {
+      "text": "show me pants under 50 dollars",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "PriceScope",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "😀",
+      "intent": "Happy",
+      "entities": []
+    },
+    {
+      "text": "<ss type=\"sad\">:-(</ss>",
+      "intent": "Sad",
+      "entities": []
+    },
+    {
+      "text": "show me bose headphones",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "ool",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find adidas hat",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "do you know donald trump?",
+      "intent": "Abuse",
+      "entities": []
+    },
+    {
+      "text": "sup dude",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sports shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me tennis balls",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "please find red handbag",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find adidas",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "please find red handbag on nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "samsung s5",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please find orange pants from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me red pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "shoe me red nike roshe",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "look for a pair of nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "do you know tay",
+      "intent": "Abuse",
+      "entities": []
+    },
+    {
+      "text": "please find white nike shorts",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "tes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find red bag",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "a blue shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find a pair of white nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Color",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me red sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "can you find me some shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "<ss type=\"smile\">:-)</ss>",
+      "intent": "Happy",
+      "entities": []
+    },
+    {
+      "text": "show me red pants from jcrew",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "look for red purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find a marc jacobs purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "find marc jacobs purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find marc jacobs",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find bose headphones",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "please find red shoes from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "buy shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "looking for red bag",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me red lego from target",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me blue nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me a red purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find a kate spade purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "find adidas shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find prada purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "help",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find a kate spade bag",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "find a coach bag",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find adidas shoe",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "headphones from bose",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "show me red nike roshe",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me a tv",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find red pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find red roshe",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "could you possibly find me mauve shirt from macys",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Color",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i want jeans",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find h&m shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want some pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find beer",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me red nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "black shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Color",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i want a kate spade purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": ":(",
+      "intent": "Sad",
+      "entities": []
+    },
+    {
+      "text": "find blue shorts from nike",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i need a new pair of jeans",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "find red pants nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find disney shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want a donut",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want new shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find kate spade purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find cd's by hawkwind",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "pikes place",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want a blue bag",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want the new hawkwind album",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i want white nikes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me blue handbags",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find the new hawkwind album",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "hey",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want some white nikes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "looking for earrings",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "looking for ear rings",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a turn table",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a lakers t shirt",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "please find a black short from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find music by hawkwind",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "hi there",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find black blazer",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i want grey headbands",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find a blak shirt from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me red handbags from nordstrom",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find me some yellow lego from target",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find kate spade bag",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a new laptop",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "looking for a black purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find me some yellow pants",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who built this thing?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need a new turntable needle",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "blu ray",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i want an xbox",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find green flared pants made from velvet",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find albums by hawkwind",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i want a puppy",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "find size 15 shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "can you find some yellow shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Color",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a turntable",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "kate spade bag",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 0,
+          "endPos": 1
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find hawkwind",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find blue shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Color",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": ".. please find red sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Color",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "find some red nike sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "please find white nike sneakers",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find a black purse",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for white nike shoes",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "Color",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "please find red lego from target",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Color",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i need baby bottles from medela",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Brand",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "ProductName",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    }
+  ]
+}
